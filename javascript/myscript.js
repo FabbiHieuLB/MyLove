@@ -93,7 +93,7 @@ getclickf.addEventListener("mouseenter", function () {
     translateY: [-2, 0],
     translateX: [-2, 0],
     rotate: [6, 0],
-    color: ["#6d3842", "#ea4335"],
+    color: ["#6d3842", "#d844ed"],
     delay: function (el, i) {
       return i * 20;
     },
@@ -107,7 +107,7 @@ getclickf.addEventListener("mouseleave", function () {
     translateY: [-0.5, 0],
     translateX: [-0.5, 0],
     rotate: [-1, 0],
-    color: ["#6d3842", "#ea4335"],
+    color: ["#6d3842", "#d844ed"],
     delay: function (el, i) {
       return i * 20;
     },
@@ -198,9 +198,9 @@ cantho.insertAdjacentHTML(
 
 // Phần popup khi bạn nhấn vào nút "Nhịp tim của anh"
 document.querySelector(".Description .modal-title").innerHTML =
-  '<i class="far fa-comment-alt"></i>&nbsp;Nhịp tim như vậy là tại vì:';
+  '<i class="far fa-comment-alt"></i>&nbsp;Đã bảo đừng kick rồi:';
 document.querySelector(".Description .modal-body").innerHTML =
-  'Anh thích em đó <i class="fas fa-heart"></i> ';
+  'Anh chỉ muốn cho em thấy là anh yêu em thôi <i class="fas fa-heart"></i> ';
 var author = document.querySelector(".author .me");
 author.style.opacity = "0.5";
 
