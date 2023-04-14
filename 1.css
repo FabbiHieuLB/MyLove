@@ -11,8 +11,8 @@ body {
     background-image: url("./img/crush.jpg");
     background-color: #f7dada;
     background-size: contain;
-    background-repeat: space;
-    background-position: center;
+    background-repeat: inherit;
+    background-position: center center;
     display: flex;
     align-items: center;
     position: relative;
