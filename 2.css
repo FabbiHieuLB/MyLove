@@ -50,3 +50,80 @@ span {
 	color: #fff;
 	text-align: center;
 }
+.btn{
+	position: relative;
+	cursor: pointer;
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+.btn .play{
+position: relative;
+width: 80px;
+height: 80px;
+background: #f42e79;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 15px 25px #f42e7966;
+transition: 0.5s;
+}
+.btn.active .play{
+	/* background-image: url('img/bg-love.jpg'); */
+box-shadow: 0 0 0 150vh #f42e79;
+}
+.btn .play::before{
+content: '';
+position: absolute;
+border: 25px solid #fff;
+border-top: 15px solid transparent;
+border-bottom: 15px solid transparent;
+border-right: 0px solid transparent;
+transform: translate(5px);
+}
+.btn p{
+font-weight: 500;
+font-size: 1em;
+color: #73227e;
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+.clip{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100000;
+transition: 0.5s;
+background-image: url(img/bg-love.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+}
+.clip.active{
+	transition-delay: 0.5s;
+	transform: translate(-50%, -50%) scale(1);
+}
+.clip video{
+	max-width: 900px;
+	outline: none;
+	border: 10px solid #fff;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+.clip .close{
+position: absolute;
+top: 30px;
+right: 30px;
+cursor: pointer;
+font-weight: 500;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #fff;
+}

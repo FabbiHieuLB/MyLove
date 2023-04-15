@@ -71,5 +71,22 @@ window.onload = function() {
 		}
 	});
 };
+let btn = document.querySelector('.btn');
+let clip = document.querySelector('.clip');
+let closed = document.querySelector('.close');
+let video = document.querySelector('video');
+btn.onclick = function(){
+	btn.classList.add('active');
+	clip.classList.add('active');
+
+	video.play();
+	console.log('awn chua');
+	video.currenTime = 0;
+}
+closed.onclick = function(){
+	btn.classList.remove('active');
+	clip.classList.remove('active');
+	video.pause();
+}
 
 
